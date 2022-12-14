@@ -1,12 +1,12 @@
-from service.BasketService import BasketService as bs
+from service.BasketService import BasketService
 
 
 class Console:
     def __init__(self):
-        self.bs = bs()
+        self.BasketService = BasketService()
 
     def show_foods_in_basket(self):
-        for item in self.bs.get_basket_foods():
+        for item in self.BasketService.get_basket_foods():
             print(item)
 
     def show_total_summ(self, value):

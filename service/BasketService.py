@@ -14,9 +14,9 @@ class BasketService:
         return self.basket.get_basket_list()
 
     def calculate_foods(self):
-        bs_list = self.basket.get_basket_list()
+        list_of_foods = self.basket.get_basket_list()
         total = 0
-        for item in bs_list:
+        for item in list_of_foods:
             total += item.get_price() * item.get_amount()
 
         return total
