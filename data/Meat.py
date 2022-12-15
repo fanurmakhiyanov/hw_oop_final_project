@@ -11,5 +11,5 @@ class Meat(Foods):
         return self.type_of_meat
 
     def __str__(self):
-        return f"Наименование мяса: {super().get_foods_name()}, Цена: {super().get_price()}, Сумма: {super().get_amount()}, " \
-                f"Вид мяса: {self.get_type_of_meat} "
+        return f"Наименование продукта: {super().get_foods_name()}, Цена: {super().get_price()} руб., Количество: {super().get_amount()} кг, " \
+                f"Тип мяса: {self.get_type_of_meat}"

@@ -11,5 +11,5 @@ class Vegetables(Foods):
         return self.type_of_vegetable
 
     def __str__(self):
-        return f"Наименование овоща: {super().get_foods_name()}, Цена: {super().get_price()}, Сумма: {super().get_amount()}, " \
-                f"Вид овоща: {self.get_type_of_vegetable} "
+        return f"Наименование продукта: {super().get_foods_name()}, Цена: {super().get_price()} руб., Количество: {super().get_amount()} кг, " \
+                f"Тип овоща: {self.get_type_of_vegetable} "

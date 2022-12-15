@@ -8,7 +8,6 @@ class BasketService:
     def put_foods_in_basket(self, foods):
         basket_list = self.basket.get_basket_list()
         basket_list.append(foods)
-        a = 1
 
     def get_basket_foods(self):
         return self.basket.get_basket_list()
